@@ -25,7 +25,7 @@ unzip -o master.zip
 cd lakka_nespi_power-master/
 cp -R lib/ /storage/
 mkdir -p /storage/scripts
-cp scripts/* /storage/scripts/
+cp -R scripts/* /storage/scripts/
 
 
 if [ ! -f /storage/.config/autostart.sh ]; then
