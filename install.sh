@@ -21,7 +21,7 @@ wget "https://github.com/marcelonovaes/lakka_nespi_power/archive/master.zip"
 
 #Step 4) Unpack files --------------------------------------
 
-unzip master.zip
+unzip -o master.zip
 cd lakka_nespi_power-master/
 cp -R lib/ /storage/
 mkdir -p /storage/scripts
