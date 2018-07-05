@@ -35,14 +35,13 @@ fi
 if grep -Fxq "shutdown.py" /storage/.config/autostart.sh 
 then
     echo "SUCCESS! Shutdown Script configured!"
+	echo "Installation done. Will now reboot after 3 seconds."
+	sleep 3
+	reboot
 else
+	echo "not found"
     echo "python /storage/scripts/shutdown.py &" >> /storage/.config/autostart.sh
 fi
 
 
-#Step 7) Reboot to apply changes----------------------------
-echo "Installation done. Will now reboot after 3 seconds."
-sleep 3
-reboot
-#-----------------------------------------------------------
 
